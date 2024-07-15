@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>day11</title>
+</head>
+
+<body>
+    <a onclick="fun_name()" class="btn btn-outline-dark" href="">click here</a><br>
+    <button onclick="fun_name()">click here</button>
+    <p style="color: rgb(98, 0, 255);" id="para">hello sns</p>
+    <p class="main">Lorem ipsum dolor sit amet.</p>
+    <script>
+        var a = document.getElementById("para");
+        document.write(a.textContent + "<br");
+
+        a.textContent = "hello world";
+        document.write(a.textContent + "<br>");
+        a.style.background = "red"
+
+        var b = document.getElementsByClassName("main");
+        document.write(b.textContent)
+
+
+        x = 10;
+        y = 20;
+        c = x + y;
+        document.write("<br>" + c)
+
+    </script>
+    <!-- <script src="js.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+<hr>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="button"> clickhere</button>
+
+    <script>
+        document.getElementById('button').addEventListener("click", myfunction);
+
+        function myfunction() {
+            alert("vanakam nanbargaleeeeeeeeeeee")
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Title</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <div class="textcenter">
+                <div>
+                    <h1>STOPWATCH</h1>
+                    <h1 class="display-1 fW-bold m-5" id="Time">00:00:00</h1>
+                </div>
+                <BUtton id="Startbtn" onclick="start()" class="btn btn-success">START</BUtton>
+                <BUtton id="Resetbtn" onclick="reset()" class="btn btn-warning">RESET</BUtton>
+                <BUtton id="Stopbtn" onclick="stop()" class="btn btn-danger">STOP</BUtton>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        let seconds = 0;
+        let minutes = 0;
+        let hours = 0;
+
+        const start = document.getElementById('start()')
+        const reset = document.getElementById('reset()')
+        const stop = document.getElementById('stop()')
+
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+<hr>
+
+

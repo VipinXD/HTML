@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Random Color Generator</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        
+#toggleButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+    </style>
+</head>
+<body id="background">
+    <button onclick="toggleAutoChange()" id="toggleButton">Auto Change</button>
+
+    <script>
+        var autoChangeInterval = null; // Variable to store the interval ID
+
+function generateRandomColor() {
+    var randomColor = '#';
+    var characters = '0123456789ABCDEF';
+    for (var i = 0; i < 6; i++) {
+        randomColor += characters[Math.floor(Math.random() * 16)];
+    }
+    document.getElementById('background').style.backgroundColor = randomColor;
+}
+
+function startAutoChange() {
+    autoChangeInterval = setInterval(generateRandomColor, 200); // Change color every 1 second (1000 milliseconds)
+    document.getElementById('toggleButton').textContent = "Stop Auto Change";
+}
+
+function stopAutoChange() {
+    clearInterval(autoChangeInterval); // Clear the interval to stop auto changing
+    autoChangeInterval = null; // Reset the interval ID
+    document.getElementById('toggleButton').textContent = "Start Auto Change";
+}
+
+function toggleAutoChange() {
+    if (autoChangeInterval) {
+        stopAutoChange();
+    } else {
+        startAutoChange();
+    }
+}
+
+
+    </script>
+    
+</body>
+</html>

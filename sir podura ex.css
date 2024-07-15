@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            border:2px solid black;
+        }
+        * #id1{
+            color:brown;
+        } *
+        h1{
+            color: tomato;
+        }
+        * .class1{
+            color:green;
+        } *
+        H1{
+            color:purple;
+        }
+    h3, p, h4
+    {
+        color: blue;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: aquamarine;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="color:aqua">Lorem, ipsum.</h1>
+    <h2 style="color:orange">Lorem, ipsum.</h2>
+    <h1 id="id1" class="class1">Lorem, ipsum.</h1>
+    <h3>Lorem, ipsum.</h3>
+    <h1>Lorem, ipsum.</h1>
+    <h1>Lorem, ipsum.</h1>
+    <p>Lorem, ipsum.</p>
+    <h1>Lorem, ipsum.</h1>
+    <h1>Lorem, ipsum.</h1>
+
+</body>
+</html>
+
+
+
+
+waterfall method
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+   
+    #id2
+    {
+        text-transform: uppercase;
+    }
+       
+        .candidate {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: red;
+            background-color: rgb(255, 232, 104);
+        }
+        .candidate{
+            color:rgb(0, 0, 0);
+            text-transform: uppercase;
+        }
+        .first {
+            color: blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 2px rgb(255, 1, 1) solid;
+            background-color: rgb(104, 232, 255);
+        }
+
+        #Lpa12{
+            color:chartreuse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .selected {
+            color: rgba(251, 255, 11, 0.723);
+            font-family: Times New Roman, Times, serif;
+            background-color: black;
+        }
+       p.candidate{
+        font-style: italic;
+        font-weight: bold;
+       }
+
+        p {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="candidate">student 0</h1>
+    <p id="Lpa12 id2" class="candidate first selected">student 1</p>
+    <p class="candidate">student 2</p>
+    <p class="candidate">student 3</p>
+    <p class="candidate">student 4</p>
+    <p class="candidate">student 5</p>
+    <p class="candidate selected">student 6</p>
+    <p class="candidate">student 7</p>
+    <p class="candidate">student 8</p>
+    <p id="id2">student 9</p>
+    <p>student 10</p>
+</body>
+</html>
+<hr>
+
+
+Descendant Selector
+=================
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         p a{
+            text-transform: uppercase;
+            background-color: gold;
+            text-decoration: none;
+        }
+    </style>
+   
+</head>
+
+<body>
+    <p>
+        Lorem ipsum<i><b><a href="https://www.wikipedia.org">olor</a></b> </i> sit amet consectetur adipisicing elit. Nostrum, ipsam quod! Voluptatum distinctio beatae
+        laboriosam <span>Lorem <a href="/desendantSelector.html">descendant</a> ipsum dolor sit.</span> minus quo corporis, qui aspernatur unde exercitationem,<a href="https://www.wikipedia.org">olor</a> sunt debitis eveniet ducimus aut, voluptas
+        molestiae harum?
+    </p>
+</body>
+
+</html>
+=======================================
+child Selector
+=======================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li>a{
+            text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+            color: brown;
+        }
+        li{
+            background-color: rgba(123, 82, 228, 0.892);
+        }
+        a{
+            text-decoration: overline;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <nav>
+            <ul>
+                <li>Lorem, ipsum.</li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">page 1</a></li>
+            <li><a href="#">page 2</a></li>
+        </ul>
+        </nav>
+    </header>
+    <a href="#">home</a>
+    <li><p><a href="3">home</a></p></li>
+</body>
+</html>
+

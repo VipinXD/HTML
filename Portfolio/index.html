@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<title>portfolio</title>
+<STyle>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box  back;
+        font-family:sans-serif;
+    }
+
+    .header{
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10%;
+        /* background-image: url(bg\ header.jpg); */
+        background-color: rgb(255, 213, 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .image{
+        margin-top: 150px;
+    }
+    .bg{
+        background-image: url(./background.avif);
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .name{
+        font-size: 50px;
+        font-style:italic;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:red;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .nav a{
+        font-size:18px;
+        color:red;
+        text-decoration: none;
+        font-weight: 600;
+        margin-left: 35px;
+    }
+    .nav a:hover{
+        color: red;
+    }
+    .home{
+        height: 100vh;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+        
+    }
+
+    .myself{
+        max-width: 600px;
+        text-align:right ;
+        color: aliceblue;
+    }
+    .myself h1{
+        font-size:55px;
+        line-height: 1.2;
+    }
+    .myself h3{
+        font-size: 40px;
+        color: red;
+    }
+     .myself p{
+        font-size: 17px;
+        margin-top: 20px;
+     }
+
+     .social a {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        background-color:rgb(255, 204, 0);
+        border: 2px solid red;
+        border-radius: 50px;
+        font-size: 20px;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12px;
+     }
+
+     .social a:hover{
+        background-color: black;
+        color:white ;
+        box-shadow:0 0 10px yellow;
+     }
+
+
+</STyle>
+
+
+
+
+</head>
+<body class="bg">
+
+    <header class="header">
+        <a href="#" class="name">VIPIN.V</a>
+        <nav class="nav">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">RESUME</a>
+            <a href="#">ACHIEVMENT</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="image">
+            <img src="robot.webp" width="400px" height="400px" style="border-radius: 50%;">
+        </div>
+        <div class="myself">
+            <h1>Hi,I'm VIPIN</h1>
+            <h3>Mechatronics Engineering</h3>
+            <p>
+                I am a skilled mechatronics engineer specializing in developing innovative robotic systems by integrating sensors, actuators, AI algorithms, and interdisciplinary engineering solutions.
+            </p>
+
+            <div class="social">
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

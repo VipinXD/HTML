@@ -1,0 +1,110 @@
+<h1>CONTEXT MENU</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 style="background-color: greenyellow; display: inline-block;">The context menu</h1>
+        <p style="background-color: red;" id="pk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab
+            asperiores voluptatum obcaecati aliquid, sequi doloribus, officia autem unde minima assumenda magni ipsam
+            laborum, soluta repudiandae in exercitationem! Quisquam qui a harum, ullam dolorum obcaecati architecto nam
+            non ex eaque quae temporibus natus accusantium hic, placeat officiis nihil aliquam veniam beatae saepe
+            molestiae velit enim quos. Itaque assumenda atque accusantium fugit magni minus vero doloremque iusto,
+            corporis, vel sapiente in temporibus odio vitae mollitia voluptates provident ipsum expedita praesentium,
+            minima incidunt eveniet nemo molestias? Exercitationem ab provident esse corrupti repudiandae repellat ullam
+            voluptatem eveniet officiis. Magnam, illo? Dicta, expedita nam.</p>
+    </div>
+    <script>
+        const click = document.getElementById("pk")
+
+        click.addEventListener("contextmenu",vipin )
+
+        function vipin(event){
+            console.log(event)
+            event.preventDefault();
+        }
+    </script>
+</body>
+</html>
+
+<hr>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+</head>
+<body>
+
+
+    
+
+
+
+    <script>
+        let menu = null;
+            document.addEventListener('DOMContentLoaded', function(){
+                //make sure the right click menu is hidden
+                menu = document.querySelector('.menu');
+                menu.classList.add('off');
+               
+                //add the right click listener to the box
+                let box = document.getElementById('box');
+                box.addEventListener('contextmenu', showmenu);
+               
+                //add a listener for leaving the menu and hiding it
+                menu.addEventListener('mouseleave', hidemenu);
+               
+                //add the listeners for the menu items
+                addMenuListeners();
+            });
+           
+            function addMenuListeners(){
+                document.getElementById('red').addEventListener('click', setColour);
+                document.getElementById('gold').addEventListener('click', setColour);
+                document.getElementById('green').addEventListener('click', setColour);
+            }
+           
+            function setColour(ev){
+                hidemenu();
+                let clr = ev.target.id;
+                document.getElementById('box').style.backgroundColor = clr;
+            }
+           
+            function showmenu(ev){
+                ev.preventDefault();
+                //show the custom menu
+                // console.log( ev.clientX, ev.clientY );
+                menu.style.top = `${ev.clientY }px`;
+                menu.style.left = `${ev.clientX }px`;
+                menu.classList.remove('off');
+            }
+           
+            function hidemenu(ev){
+                menu.classList.add('off');
+                menu.style.top = '-200%';
+                menu.style.left = '-200%';
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+

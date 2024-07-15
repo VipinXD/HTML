@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    h2 {
+      border: 2px solid blue;
+    }
+
+    h1 {
+      color: rgb(4, 255, 0);
+    }
+
+    .ok {
+      background-color: black;
+      border: 3px solid violet;
+      color: red;
+    }
+
+    #ss {
+      border: 3px solid red;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <center>
+    <h1 class="sp">Lorem ipsum dolor sit amet</h1>
+  </center>
+  <h2>Lorem ipsum dolor sit.</h2>
+  <h3 id="ss" class="ok">Lorem ipsum dolor sit.</h3>
+  <h4>Lorem ipsum dolor sit amet.</h4>
+  <h5>Lorem ipsum dolor sit amet.</h5>
+</body>
+
+</html>
+<hr>
+
+<p>waterfall method</p>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>waterfall</title>
+
+  <style>
+    .selected {
+      border: 2px solid red;
+      color: darkblue;
+    }
+
+    #lpa12 {
+      background-color: aquamarine;
+    }
+
+    .cc {
+      border: 2px solid slateblue;
+      color: turquoise;
+    }
+
+    .cc {
+      background-color: blanchedalmond;
+      text-transform: uppercase;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .cc {
+      border: 4px solid orangered;
+    }
+
+    #lpa13 {
+      background-color: blueviolet;
+      color: yellow;
+    }
+
+    .ck {
+      background-color: black;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h3 id="lpa12" class="selected">student 1</h3>
+  <h3 class="cc ">student 2</h3>
+  <h3 class="cc">student 3</h3>
+  <h3 class="cc">student 4</h3>
+  <h3 id="lpa13" class="ck">student 5</h3>
+  <h3 class="cc">student 6</h3>
+  <h3 class="cc">student 7</h3>
+</body>
+
+</html>
+<hr>
+
+Descendant Selector
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descendant</title>
+  <style>
+    p a {
+      text-transform: none;
+      color: red;
+      background-color: greenyellow;
+    }
+  </style>
+
+</head>
+
+<body>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.<i><a href="https://www.google.com">google</a></i> Porro,
+    nam explicabo. Voluptatibus, obcaecati? Vel excepturi placeat dolore reprehenderit incidunt recusandae provident,
+    sapiente commodi quam, <b><a href="https://www.instagram.com">insta</a></b> cupiditate pariatur nemo officia ratione
+    doloremque maiores aperiam dignissimos molestias consequuntur perferendis similique officiis. Culpa dignissimos
+    voluptas error eligendi necessitatibus!
+    Tempora quas quod iste quidem nemo!<b><a href="https://www.facebook.com">FB</a></b>
+  </p>
+
+</body>
+
+</html>
+<hr>
+
+child Selector
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>child Selector</title>
+  <style>
+    
+    li>a{
+         text-decoration: none;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: greenyellow;
+        }     
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="https://www.google.com">Home</a></li>
+        <li><a href="indexcss.html">contactus</a></li>
+        <li><a href="*"></a>Page1</li>
+        <li><a href="#"></a>Page2</li>
+      </ul>
+    </nav>
+  </header>
+</body>
+</html>
+<hr>
+
+
+Adjacent Sibling Selector::::::::::
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adjacent Sibling Selector</title>
+<style>
+      div+p{
+        background-color: yellow;
+      }
+
+</style>
+
+</head>
+<body>
+      <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>  
+
+      <p>Porro, nam explicabo. Voluptatibus, obcaecati? </p>
+
+      <div>
+        <p>ne doloremque maiores aperiam dignissimos molestias</p>
+        <p>dignissimos voluptas error eligendi necessi</p>
+      </div>
+
+      <p>apiente commodi quam, insta cupiditate p</p>
+</body>
+</html>
+!-----
+<hr>
+General Sibling Selector
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Sibling Selector</title>
+<style>
+    div~p{
+      background-color: rgb(255, 255, 0);
+    }
+</style>
+
+</head>
+<body>
+  <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, exercitationem?</h4>
+
+  <p>Lorem ipsum dolor sit amet.</p>
+  <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, commodi?</h4>
+
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil obcaecati unde officia iusto ipsa laboriosam quam ipsum dolorum aut expedita.</p>
+
+ 
+  <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, exercitationem?</h4>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod modi, reiciendis unde beatae repellat velit.</p>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: red;
+            color: white;
+            font-family: monospace;
+        }
+        .main-box{
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+        }
+        .box2 {
+            float: right;
+            width: 500px;
+            height: 600px;
+            border: 3px solid white;
+            margin: 0px 20px 0px 20px;
+            padding: 5px;
+        }
+        .box3 {
+            float:left;
+            width: 500px;
+            height: 600px;
+            border: 3px solid white;
+            margin: 15px 20px 0px 20px;
+            padding: 5px;
+        }
+        .box1 {
+            float: left;
+            width: 500px;
+            height: 600px;
+            border: 3px solid white;
+            margin: 0px 20px 0px 20px;
+            padding: 5px;
+        }
+
+        .fhalf {
+            float: left;
+            width: 45%;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid;
+        }
+
+        .shalf {
+            float: right;
+            width: 45%;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid white;
+        }
+
+        .thalf {
+            float: left;
+            width: 45%;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid;
+        }
+
+        .fohalf {
+            float: right;
+            width: 45%;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid;
+        }
+
+        .img-div {
+            float: left;
+            width: 45%;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid;
+        }
+
+        .descr {
+            float: right;
+            width: 45%;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-box">
+    <div class="box1">
+        <div class="fhalf">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ea aspernatur possimus ut debitis quidem
+            temporibus? Ea nostrum velit doloremque similique, deleniti nisi dolore, porro cumque, veniam ducimus
+            officiis ex!
+        </div>
+        <div class="shalf">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ea aspernatur possimus ut debitis quidem
+            temporibus? Ea nostrum velit doloremque similique, deleniti nisi dolore, porro cumque, veniam ducimus
+            officiis ex!
+        </div>
+        <div class="thalf">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ea aspernatur possimus ut debitis quidem
+            temporibus? Ea nostrum velit doloremque similique, deleniti nisi dolore, porro cumque, veniam ducimus
+            officiis ex!
+        </div>
+        <div class="fohalf">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ea aspernatur possimus ut debitis quidem
+            temporibus? Ea nostrum velit doloremque similique, deleniti nisi dolore, porro cumque, veniam ducimus
+            officiis ex!
+        </div>
+        <div class="img-div">
+            <img src="https://www.picsum.photos/200/130" alt="image">
+        </div>
+        <div class="descr">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, qui. Fuga magni explicabo veritatis
+            perferendis a quaerat natus quia distinctio nostrum quo repudiandae non ipsam, perspiciatis aut pariatur et
+            sapiente?
+        </div>
+    </div>
+    <div class="box2">
+        <div class="fhalf">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ea aspernatur possimus ut debitis quidem
+            temporibus? Ea nostrum velit doloremque similique, deleniti nisi dolore, porro cumque, veniam ducimus
+            officiis ex!
+        </div>
+        <div class="shalf">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ea aspernatur possimus ut debitis quidem
+            temporibus? Ea nostrum velit doloremque similique, deleniti nisi dolore, porro cumque, veniam ducimus
+            officiis ex!
+        </div>
+        <div class="thalf">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ea aspernatur possimus ut debitis quidem
+            temporibus? Ea nostrum velit doloremque similique, deleniti nisi dolore, porro cumque, veniam ducimus
+            officiis ex!
+        </div>
+        <div class="fohalf">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ea aspernatur possimus ut debitis quidem
+            temporibus? Ea nostrum velit doloremque similique, deleniti nisi dolore, porro cumque, veniam ducimus
+            officiis ex!
+        </div>
+        <div class="img-div">
+            <img src="https://www.picsum.photos/200/130" alt="image">
+        </div>
+        <div class="descr">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, qui. Fuga magni explicabo veritatis
+            perferendis a quaerat natus quia distinctio nostrum quo repudiandae non ipsam, perspiciatis aut pariatur et
+            sapiente?
+        </div>
+    </div>
+    <div class="box3">
+        <div class="fhalf">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ea aspernatur possimus ut debitis quidem
+            temporibus? Ea nostrum velit doloremque similique, deleniti nisi dolore, porro cumque, veniam ducimus
+            officiis ex!
+        </div>
+        <div class="shalf">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ea aspernatur possimus ut debitis quidem
+            temporibus? Ea nostrum velit doloremque similique, deleniti nisi dolore, porro cumque, veniam ducimus
+            officiis ex!
+        </div>
+        <div class="thalf">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ea aspernatur possimus ut debitis quidem
+            temporibus? Ea nostrum velit doloremque similique, deleniti nisi dolore, porro cumque, veniam ducimus
+            officiis ex!
+        </div>
+        <div class="fohalf">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ea aspernatur possimus ut debitis quidem
+            temporibus? Ea nostrum velit doloremque similique, deleniti nisi dolore, porro cumque, veniam ducimus
+            officiis ex!
+        </div>
+        <div class="img-div">
+            <img src="https://www.picsum.photos/200/130" alt="image">
+        </div>
+        <div class="descr">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, qui. Fuga magni explicabo veritatis
+            perferendis a quaerat natus quia distinctio nostrum quo repudiandae non ipsam, perspiciatis aut pariatur et
+            sapiente?
+        </div>
+    </div>
+
+</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
